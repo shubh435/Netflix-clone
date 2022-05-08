@@ -2,26 +2,30 @@ import React, { useEffect, useState } from 'react'
 import {BellIcon, SearchIcon} from '@heroicons/react/solid'
 import Link from 'next/link'
 const Header = () => {
-    const [useScroll, setUseScroll] = useState(false)
+    const [isScrolled, setIsScrolled] = useState(false)
     useEffect(() => {
    const handleScroll = () =>{
-       if(window.scrollY >0){
-           setUseScroll(true)
+
+       if(window.scrollY > 0){
+           setIsScrolled(true)
        }else{
-           setUseScroll(false)
+           setIsScrolled(false)
        }
 
-       window.addEventListener('scroll',handleScroll)
-   return ()=>{
-       window.removeEventListener('scroll',handleScroll)
-   }
+      
+  
    
     }
+    window.addEventListener('scroll',handleScroll)
+    return ()=>{
+      window.removeEventListener('scroll',handleScroll)
+  }
+    
     }, [])
     
 
   return (
-    <header className={`${useScroll && "bg-red"}`}>
+    <header className={`${isScrolled  && 'bg-black'}`}>
         <div className='flex items-center space-x-2 md:space-x-10 '>
         <img
           src="https://rb.gy/ulxxee"
