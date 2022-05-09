@@ -22,8 +22,8 @@ pnpm create next-app -- --example with-tailwindcss with-tailwindcss-app
 
 Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
  -->
- url for netflix clone app
- https://netflix-clone-psi-five.vercel.app/
+<!--  url for netflix clone app
+ https://netflix-clone-psi-five.vercel.app/ -->
 starter packages:--
 1)typescript
 2)react
