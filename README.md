@@ -21,3 +21,17 @@ pnpm create next-app -- --example with-tailwindcss with-tailwindcss-app
 ```
 
 Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+
+starter packages:--
+1)typescript
+2)react
+3)next
+4)tailwindcss
+
+packages used :-
+1)tailwindcss
+2)tailwindcss-textshadow
+3)tailwind-scrollbar
+4)tailwind-scrollbar-hide
+5)heroicons
+6)reacticons
