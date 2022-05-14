@@ -29,7 +29,7 @@ const AuthContext = createContext<IAuth>({
 interface AuthProviderProps {
   children: React.ReactNode
 }
-const AuthProvider = ({ children }: AuthProviderProps) => {
+export const AuthProvider = ({ children }: AuthProviderProps) => {
   const [user, setUser] = useState<User | null>(null)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
@@ -94,7 +94,7 @@ const AuthProvider = ({ children }: AuthProviderProps) => {
   }
   const memoedValue = useMemo(()=>({
       user,signIn,signUp,logout,loading,error
-  }),[loading,user,error])
+  }),[loading,user])
 
 
   return <AuthContext.Provider value={memoedValue}>{!initialLoading && children}</AuthContext.Provider>
