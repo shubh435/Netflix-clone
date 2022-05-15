@@ -24,6 +24,7 @@ Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&ut
  -->
 <!--  url for netflix clone app
  https://netflix-clone-psi-five.vercel.app/ -->
+
 starter packages:--
 1)typescript
 2)react
@@ -38,4 +39,6 @@ packages used :-
 5)heroicons
 6)reacticons
 7)React Form Hook
-8)
+8)react player
+9)recoil
+10)material ui modal
