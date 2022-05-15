@@ -110,9 +110,10 @@ const Modal = () => {
               <div className="flex h-4 items-center justify-center rounded border border-white/40 px-1.5 text-xs">
                 HD
               </div>
-              <div className="relative flex justify-end w-[75%] ">
+              <div className="relative flex w-[75%] justify-end ">
                 <h3>
-                <span className='text-[gray]'>Movie Name:- </span> {" "}{movie?.title || movie?.name || movie?.original_name}
+                  <span className="text-[gray]">Movie Name:- </span>{' '}
+                  {movie?.title || movie?.name || movie?.original_name}
                 </h3>
               </div>
             </div>
