@@ -8,7 +8,9 @@ import {
 import MuiModal from '@mui/material/Modal'
 import { useEffect, useState } from 'react'
 import { FaPlay } from 'react-icons/fa'
-import ReactPlayer from 'react-player/lazy'
+import React from 'react'
+import ReactPlayer from 'react-player'
+
 import { useRecoilState } from 'recoil'
 import { modalState, movieState } from '../atoms/modalAtom'
 import { Genre, Movie, Element } from '../typing'
@@ -74,7 +76,7 @@ const Modal = () => {
             style={{ position: 'absolute', top: '0', left: '0' }}
             // controls={controls}
             muted={muted}
-          />
+          ></ReactPlayer>
 
           <div className="absolute bottom-10 flex w-full items-center justify-center gap-3">
             <div className="flex space-x-2">
